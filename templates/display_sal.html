@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>SALGRADE TABLE</h1>
+        <table border="4px">
+            <tr>
+                <th>sal</th>
+                <th>losal</th>
+                <th>hisal</th>
+            </tr>
+            {% for so in salary %}
+            <tr>
+                <td>{{so.sal}}</td>
+                <td>{{so.losal}}</td>
+                <td>{{so.hisal}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
